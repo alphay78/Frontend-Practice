@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greek Yogurt</title>
+  <style>
+    /* Apply a gradient background and set basic styling for the body */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #f7f7f7, #e6e6fa);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Styling the main container */
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 60px 30px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      top: 50px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    /* Add a fade-in animation */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Header styling */
+    h1 {
+      color: #6f3ceb;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #333;
+      border: 1px solid #6f3ceb;
+      padding: 15px;
+      border-radius: 8px;
+      display: inline-block;
+      font-size: 20px;
+      background-color: #f7f7ff;
+    }
+
+    /* Image styling with hover effect */
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.5s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Paragraph styling */
+    p {
+      line-height: 1.7;
+      font-size: 16px;
+      color: #444;
+      margin: 20px 0;
+    }
+
+    /* "Learn More" link styling */
+    a.learn-more {
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      color: #6f3ceb;
+      padding: 10px;
+      display: inline-block;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a.learn-more:hover {
+      color: #f65c78;
+      transform: scale(1.1);
+    }
+
+    /* Button styling with box shadow and hover animation */
+    button {
+      margin: 20px auto;
+      background-color: #6f3ceb;
+      color: white;
+      font-size: 18px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(111, 60, 235, 0.3);
+      transition: all 300ms ease;
+      display: inline-block;
+    }
+
+    button:hover {
+      background-color: #f65c78;
+      box-shadow: 0 8px 30px rgba(111, 60, 235, 0.5);
+      transform: translateY(-3px);
+      cursor: pointer;
+    }
+
+    /* Footer styling */
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>I Love Yogurt</h1>
+    <h2>Especially Greek Yogurt</h2>
+    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2023/02/Greek-yogurt-7722171.jpg?quality=90&webp=true&resize=440,400" alt="Greek Yogurt">
+    
+    <p>
+      Greek yogurt is a thick and creamy dairy product made by straining regular yogurt to remove whey. It has a tangy flavor and can be a healthy alternative to sour cream or mayonnaise. Enjoy it plain, with honey, or in your favorite recipes.
+    </p>
+    
+    <a href="https://en.wikipedia.org/wiki/Strained_yogurt" target="_blank" class="learn-more">Learn More on Wikipedia</a>
+    
+    <br>
+    <button id="buyBtn">Buy Greek Yogurt</button>
+
+    <p class="footer">
+      This page is built by Alpha Degago
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('buyBtn').addEventListener('click', function() {
+      let userChoice = prompt('Would you like to buy Greek Yogurt? Type yes or no.');
+
+      if (userChoice.toLowerCase() === 'yes') {
+        alert('Great! You can purchase it at your local grocery store.');
+      } else {
+        alert('No worries! You can still explore its amazing health benefits.');
+      }
+    });
+  </script>
+
+</body>
+</html>
